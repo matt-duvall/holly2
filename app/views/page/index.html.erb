@@ -1,14 +1,60 @@
 <div class="container">
-<div class="jumbotron">
-<H2>Lake Auburn Buoy</h2>
-<h3>Data from 2013</h3></div></div>
-	<div class="container">
-<div id="graphdiv2"
-  style="width:1000px; height:600px;"></div>
-<script type="text/javascript">
-  g2 = new Dygraph(
-    document.getElementById("graphdiv2"),
-    "Auburn_2013buoy.csv", // path to CSV file
-    {}          // options
-  );
-</script>
+	<div class="jumbotron">
+		<H2>Lake Auburn Buoy</h2>
+		<h3>Data from 2013</h3>
+	</div>
+</div>
+<div class="container">
+	<div class="col-md-3">
+		<a href="/about"><h4>Overview</h4>
+		<div id="graphdiv2"
+		  style="width:250px; height:150px;">
+		</div></a>
+		<script type="text/javascript">
+		  g2 = new Dygraph(
+		    document.getElementById("graphdiv2"),
+		    "Auburn_2013buoy_over.csv", // path to CSV file
+		    {}          // options
+		  );
+		</script>
+	</div>
+	<div class="col-md-3">
+		<a href="/top_six"><h4>Top 6 Meters</h4>
+		<div id="graphdiv3"
+		  style="width:250px; height:150px;">
+		</div></a>
+		<script type="text/javascript">
+		  g2 = new Dygraph(
+		    document.getElementById("graphdiv3"),
+		    "Auburn_2013buoy_top.csv", // path to CSV file
+		    {}          // options
+		  );
+		</script>
+	</div>
+	<div class="col-md-3">
+		<a href="/mid_depths"><h4>Mid Depths</h4>
+		<div id="graphdiv4"
+		  style="width:250px; height:150px;">
+		</div></a>
+		<script type="text/javascript">
+		  g2 = new Dygraph(
+		    document.getElementById("graphdiv4"),
+		    "Auburn_2013buoy_mid.csv", // path to CSV file
+		    {}          // options
+		  );
+		</script>
+	</div>
+	<div class="col-md-3">
+		<a href="/bottom_depths"><h4>Bottom Depths</h4>
+		<div id="graphdiv5"
+		  style="width:250px; height:150px;">
+		</div></a>
+		<script type="text/javascript">
+		  g2 = new Dygraph(
+		    document.getElementById("graphdiv5"),
+		    "Auburn_2013buoy_bot.csv", // path to CSV file
+		    {}          // options
+		  );
+		</script>
+	</div>
+</div>
